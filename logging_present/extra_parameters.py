@@ -1,26 +1,29 @@
 import logging
+from typing import Dict, Tuple
 
-from logging_present.settings import log_config
-
-logging.basicConfig(**log_config)
+# Example of config with new keyword argument
+logging.basicConfig(format="%(asctime)s - %(message)s", level="INFO")
 logger = logging.getLogger(__name__)
 
 
-logging.info("logging message")
-logger.info("logger message")
+# Creating default LoggerAdapter
+adapter1 = logging.LoggerAdapter(logger, {"appname": "football"})
+adapter1.info("message from adapter 1")
 
 
 class CustomAdapter(logging.LoggerAdapter):
-    def process(self, msg, kwargs):
+    def process(self, msg: str, kwargs: Dict) -> Tuple[str, Dict]:
+        client_ip = None
+        if "client_ip" in kwargs:
+            client_ip = kwargs.pop("client_ip")
+
         return (
-            "original: %s, kwargs: %s, client_ip: %s"
-            % (msg, kwargs, self.extra["client_ip"]),
+            "[original: %s, kwargs: %s, client_ip: %s]" % (msg, kwargs, client_ip),
             kwargs,
         )
 
 
-adapter = CustomAdapter(logger, {"client_ip": "locahost"})
+adapter2 = CustomAdapter(logger, {"client_ip": None})
 
-adapter.info("message from adapter")
-adapter.info("message with extra", extra={"appname": "football"})
-logger.info("logger again")
+adapter2.info("message without extra")
+adapter2.info("message with extra", client_ip="localhost")

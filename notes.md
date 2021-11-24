@@ -15,4 +15,5 @@
 3. Tell about extra parameters
 4. Tell about Adapters, how to use them
 5. Tell about Filters
- 
+6. Tell about `exc_info`
+7. Tell about f-strings vs `%` style 
