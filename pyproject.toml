@@ -1,10 +1,11 @@
 [tool.poetry]
-name = "python_logging_present"
+name = "pyrocks_meetup_python_logging"
 version = "0.1.0"
 description = ""
 authors = ["Konstantin Mokhov <Konstantin_Mokhov@epam.com>"]
 packages = [
-    { include = "logging_present"  }
+    { include = "end"  },
+    { include = "start" },
 ]
 
 [tool.poetry.dependencies]
