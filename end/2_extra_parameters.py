@@ -17,19 +17,18 @@ adapter1.info("message from adapter 1")
 # Creating CustomAdapter class to enreach logging data
 class CustomAdapter(logging.LoggerAdapter):
     def process(self, msg: str, kwargs: Dict) -> Tuple[str, Dict]:
-        client_ip = None
-        if "client_ip" in kwargs:
-            client_ip = kwargs.pop("client_ip")
-
+        client_ip = kwargs.pop("client_ip")
+        appname = kwargs.pop("appname", None)
+        self.extra["appname"] = appname
         return (
-            "[original: %s, kwargs: %s, client_ip: %s]" % (msg, kwargs, client_ip),
+            "[original: %s; client_ip: %s; appname: %s]" % (msg, client_ip, appname),
             kwargs,
         )
 
 
 # Instantiating Adapter
-adapter2 = CustomAdapter(logger, {"client_ip": None})
+adapter2 = CustomAdapter(logger, {})
 
 # Logging without and with extra
-adapter2.info("message without extra")
-adapter2.info("message with extra", client_ip="localhost")
+adapter2.info("some message", client_ip="localhost", appname="football")
+adapter2.info("some message", client_ip="localhost")
