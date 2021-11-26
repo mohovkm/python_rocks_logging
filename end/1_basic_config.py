@@ -1,8 +1,8 @@
 import logging
 
 # importing somefunction from module
-from logging_present.functions.functions import somefunction
-from logging_present.settings import log_config
+from start.functions.functions import somefunction
+from start.settings import log_config
 
 # Configuring with basic config
 logging.basicConfig(**log_config)
