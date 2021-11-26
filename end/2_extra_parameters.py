@@ -3,7 +3,7 @@ from typing import Dict, Tuple
 
 # Example of config with new keyword argument
 logging.basicConfig(
-    format="%(asctime)s - %(message)s",
+    format="%(asctime)s - %(message)s - %(appname)s",
     level="INFO",
 )
 logger = logging.getLogger(__name__)
