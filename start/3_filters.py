@@ -10,9 +10,6 @@ logging.info("logging message")  # will not be printed
 logger.info("some message")
 
 
-# Enreach with extra
-
-
 # Create filter method enreach with appname, filter login
 class ContextFilter(logging.Filter):
     def filter(self, record):

@@ -8,6 +8,8 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# Logging with extra
+
 
 # Creating default LoggerAdapter with extra by default
 
