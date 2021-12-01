@@ -3,7 +3,7 @@ from typing import Dict, Tuple
 
 # Example of config with new keyword argument
 logging.basicConfig(
-    format="%(asctime)s - %(message)s - %(appname)s",
+    format="%(asctime)s - %(message)s - %(appname)s",  # delete before custom adapter
     level="INFO",
 )
 logger = logging.getLogger(__name__)
@@ -19,7 +19,6 @@ class CustomAdapter(logging.LoggerAdapter):
     def process(self, msg: str, kwargs: Dict) -> Tuple[str, Dict]:
         client_ip = kwargs.pop("client_ip")
         appname = kwargs.pop("appname", None)
-        self.extra["appname"] = appname
         return (
             "[original: %s; client_ip: %s; appname: %s]" % (msg, client_ip, appname),
             kwargs,
