@@ -1,8 +1,17 @@
 # Logging module presentation based on [python docs](https://docs.python.org/3/library/logging.html)
 
+## About me:
+- *Name*: Konstantin Mokhov
+- *Position*: Team Lead
+- *Company*: Epam
+- *LinkedIn*: <https://www.linkedin.com/in/konstantin-mohov>
+- *Telegram*: 
+    - [me](https://t.me/mohovkm)
+    - [Python Rocks](https://t.me/python_rocks)
+
 ### Requirements:
 - python = "^3.7"
-- poetry
+- [poetry](https://python-poetry.org/)
 
 ### How to run examples:
 ```bash
@@ -31,5 +40,4 @@ python -m 1_basic_config
 - Don't use f-strings in logger.
 - Use `exc_info` keyword to add traceback into LogRecord.
 - [*Join EPAM to grow and succeed*](https://www.epam.com/careers)
-
 
