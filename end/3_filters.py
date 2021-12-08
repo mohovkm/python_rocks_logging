@@ -22,11 +22,7 @@ logger.info("logger message", extra={"login": "admin", "appname": "myapp"})
 class ContextFilter(logging.Filter):
     def filter(self, record):
         record.appname = "logging_app"
-        if record.login == "root":
-            return False
-
-        record.attention = "true"
-        return True
+        return record.login != "root"
 
 
 # Instantianting ContextFilter and attaching it to logger
