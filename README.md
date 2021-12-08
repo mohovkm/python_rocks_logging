@@ -10,19 +10,9 @@
     - [Python Rocks](https://t.me/python_rocks)
 - **Speech**:
     - format: live coding
-    - url: <https://github.com/mohovkm/python_rocks_logging>
-
-### Requirements:
-- python = "^3.7"
-- [poetry](https://python-poetry.org/)
-
-### How to run examples:
-```bash
-poetry install
-poetry shell
-cd end
-python -m 1_basic_config
-```
+    - url: 
+        - <https://github.com/mohovkm/python_rocks_logging>
+        - <https://github.com/mohovkm/epam_pymeetup_2021>
 
 ## Topics:
 - [Basic config](https://docs.python.org/3/library/logging.html#logging.basicConfig)
@@ -35,6 +25,18 @@ python -m 1_basic_config
 - [Exception info](https://docs.python.org/3/library/logging.html#logging.Logger.debug)
 
 ## Conclusions:
+### Requirements:
+- python = "^3.7"
+- [poetry](https://python-poetry.org/)
+
+### How to run examples:
+```bash
+poetry install
+poetry shell
+cd end
+python -m 1_basic_config
+```
+
 - Use `getLogger` to instantiate logger in your module and `__name__` as a logger name.
 - Use `basicConfig` to provide configuration across all loggers.
 - Use `extra` keyword to provide extra parameters for your logger.
