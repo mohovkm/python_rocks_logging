@@ -24,7 +24,6 @@
 - [Optimization](https://docs.python.org/3/howto/logging.html#optimization)
 - [Exception info](https://docs.python.org/3/library/logging.html#logging.Logger.debug)
 
-## Conclusions:
 ### Requirements:
 - python = "^3.7"
 - [poetry](https://python-poetry.org/)
@@ -37,6 +36,7 @@ cd end
 python -m 1_basic_config
 ```
 
+## Conclusions:
 - Use `getLogger` to instantiate logger in your module and `__name__` as a logger name.
 - Use `basicConfig` to provide configuration across all loggers.
 - Use `extra` keyword to provide extra parameters for your logger.
