@@ -1,3 +1,9 @@
+###
+# About:  exc_info argument in the logging module. 
+# Docs:   https://docs.python.org/3/library/logging.html#logging.Logger.debug
+# Output: LogRecord with and without traceback
+###
+
 import logging
 import sys
 from typing import Any

@@ -1,3 +1,9 @@
+###
+# About:  Creating RotatingFileHandler and observing it behaviour.
+# Docs:   https://docs.python.org/3/library/logging.handlers.html#logging.handlers.RotatingFileHandler
+# Output: 5 files with log records in specified directory.
+###
+
 import logging
 import logging.handlers
 

@@ -1,3 +1,12 @@
+###
+# About:  Logging with extra parameters, extra by default, changing and formatting output.
+# Docs:   https://docs.python.org/3/howto/logging-cookbook.html#using-loggeradapters-to-impart-contextual-information
+#         https://docs.python.org/3/library/logging.html#logging.debug
+# Output: 2021-12-07 11:20:24,328 - message from adapter 1 - football 
+#         2021-12-07 11:21:44,488 - [original: some message; client_ip: localhost; appname: football]
+#         2021-12-07 11:21:44,488 - [original: some message; client_ip: localhost; appname: None]
+###
+
 import logging
 from typing import Dict, Tuple
 

@@ -1,3 +1,9 @@
+###
+# About:  Filtering LogRecord by parameters, enreaching LogRecord by extra attributes
+# Docs:   https://docs.python.org/3/library/logging.html#filter
+# Output: Enabling/disabling output based on "login" extra parameter
+###
+
 import logging
 
 # Format string with new keyword
