@@ -1,13 +1,16 @@
-# Logging module presentation based on [python docs](https://docs.python.org/3/library/logging.html)
+# Python logging module presentation based on [python docs](https://docs.python.org/3/library/logging.html)
 
 ## About me:
-- *Name*: Konstantin Mokhov
-- *Position*: Team Lead
-- *Company*: Epam
-- *LinkedIn*: <https://www.linkedin.com/in/konstantin-mohov>
-- *Telegram*: 
+- **Name**: Konstantin Mokhov
+- **Position**: Team Lead
+- **Company**: EPAM
+- **LinkedIn**: <https://www.linkedin.com/in/konstantin-mohov>
+- **Telegram**: 
     - [me](https://t.me/mohovkm)
     - [Python Rocks](https://t.me/python_rocks)
+- **Speech**:
+    - format: live coding
+    - url: <https://github.com/mohovkm/python_rocks_logging>
 
 ### Requirements:
 - python = "^3.7"
@@ -39,5 +42,5 @@ python -m 1_basic_config
 - Most likely you don'nt need to invent a new Handler, use existing one.
 - Don't use f-strings in logger.
 - Use `exc_info` keyword to add traceback into LogRecord.
-- [*Join EPAM to grow and succeed*](https://www.epam.com/careers)
+- [**Join EPAM to grow and succeed**](https://www.epam.com/careers)
 
