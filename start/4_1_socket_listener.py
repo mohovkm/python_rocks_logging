@@ -1,3 +1,9 @@
+###
+# About:  Creating server to listen network for log events.
+# Docs:   https://docs.python.org/3/howto/logging-cookbook.html#network-logging
+# Output: LogRecord and output format will be scpecified in other app.
+###
+
 import logging
 import logging.handlers
 import pickle

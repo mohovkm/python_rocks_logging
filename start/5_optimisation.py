@@ -1,3 +1,10 @@
+###
+# About:  Formatting of message arguments is deferred until it cannot be avoided.
+#         Don't use f-strings. Executables will be executed.
+# Docs:   https://docs.python.org/3/howto/logging.html#optimization
+# Output: Observing behaviour of objects with logger module
+###
+
 import logging
 
 
