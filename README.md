@@ -22,3 +22,14 @@ python -m 1_basic_config
 - [Optimization](https://docs.python.org/3/howto/logging.html#optimization)
 - [Exception info](https://docs.python.org/3/library/logging.html#logging.Logger.debug)
 
+## Conclusions:
+- Use `getLogger` to instantiate logger in your module and `__name__` as a logger name.
+- Use `basicConfig` to provide configuration across all loggers.
+- Use `extra` keyword to provide extra parameters for your logger.
+- Use filters to filter LogRecord or enreach it with some data.
+- Most likely you don'nt need to invent a new Handler, use existing one.
+- Don't use f-strings in logger.
+- Use `exc_info` keyword to add traceback into LogRecord.
+- [*Join EPAM to grow and succeed*](https://www.epam.com/careers)
+
+
