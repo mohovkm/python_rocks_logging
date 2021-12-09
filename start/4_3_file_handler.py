@@ -5,6 +5,7 @@
 ###
 
 # import logging handlers
+import logging
 
 fmt = "%(asctime)s - %(levelname)s - %(message)s"
 
