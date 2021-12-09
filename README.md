@@ -40,8 +40,9 @@ python -m 1_basic_config
 - Use `getLogger` to instantiate logger in your module and `__name__` as a logger name.
 - Use `basicConfig` to provide configuration across all loggers.
 - Use `extra` keyword to provide extra parameters for your logger.
+- Use `LoggerAdapter` or custom adapters to provide default extra arguments or change LogRecord.
 - Use filters to filter LogRecord or enreach it with some data.
-- Most likely you don'nt need to invent a new Handler, use existing one.
+- Most likely you don't need to invent a new Handler, use existing one.
 - Don't use f-strings in logger.
 - Use `exc_info` keyword to add traceback into LogRecord.
 - [**Join EPAM to grow and succeed**](https://www.epam.com/careers)
