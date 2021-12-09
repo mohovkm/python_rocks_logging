@@ -30,5 +30,5 @@ logger.debug("%s percent style approach", s)
 
 logger.debug("%s percent style with function", doing_stuff())
 
-if logger.isEnabledFor(logging.INFO):
-    logger.info("this is the message with checking current level")
+if logger.isEnabledFor(logging.DEBUG):
+    logger.debug("this is the message with checking current level", doing_stuff())
